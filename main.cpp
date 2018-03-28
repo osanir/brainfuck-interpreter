@@ -41,7 +41,7 @@ int main(){
                    positions.push_front( (file.tellg()) );
                 break;
             case ']':
-                if( *ptr != 0 )
+                if( *ptr )
                     file.seekg(positions.front(), file.beg);
                 else
                     positions.pop_front();               
